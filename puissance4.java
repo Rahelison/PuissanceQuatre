@@ -17,7 +17,7 @@ public class puissance4 {
 		Colonne = Terminal.lireInt();
 		Terminal.sautDeLigne();
 
-		Terminal.ecrireString("Combien de jetons Ã  aligner pour gagner la partie ? ");
+		Terminal.ecrireString("Combien de jetons à aligner pour gagner la partie ? ");
 		
 		// ON DEMANDE AU JOUEUR D'ENTRER  LE NOMBRE DE JETONS A ALIGNER AFIN DE GAGNER LA PARTIE
 		
@@ -26,7 +26,7 @@ public class puissance4 {
 		
 		/** CREATION DU PLATEAU DE JEU**/
 
-		Ligne = Colonne ; // LE NOMBRE DE LIGNE EST Ã‰GALE AU NOMBRE DE COLONNE
+		Ligne = Colonne ; // LE NOMBRE DE LIGNE EST EGALE AU NOMBRE DE COLONNE
 		char[][] PlateauDeJeu = new char[Colonne][Ligne];
 		// CRÃ‰ATION DU PLATEAU DE JEU
 		for (int x = 0; x < Colonne; x++)
@@ -77,7 +77,7 @@ public class puissance4 {
 				colonne = -1;
 				String ligne = scanner.nextLine();
 
-				// VÃ‰RIFICATION DU NUMÃ‰RO ENTRÃ‰ PAR CHAQUE JOUEUR
+				// VERIFICATION DU NUMERO ENTRE PAR CHAQUE JOUEUR
 				try {
 					colonne = Integer.valueOf(ligne);
 
@@ -108,7 +108,7 @@ public class puissance4 {
 
 			char symbole = (i % 2 == 1 ? 'X' : 'O');
 
-			// NOMBRE MAXIMAL DE JETONS ALIGNÃ‰S
+			// NOMBRE MAXIMAL DE JETONS ALIGNES
 			int max = 0;
 			int x;
 			int y;
@@ -205,9 +205,9 @@ public class puissance4 {
 		if (gagnant == 0)
 			Terminal.ecrireStringln("                                      PARTIE NULLE                                           "); // SI LE PLATEAU DE JEU EST REMPLI
 		if (gagnant == 1)
-			Terminal.ecrireStringln("                           LE   JOUEUR 1   A   GAGNÃ‰  LA   PARTIE                          "); // SI LE JOUEUR 1 A GAGNÃ‰ LA PARTIE
+			Terminal.ecrireStringln("                           LE   JOUEUR 1   A   GAGNE  LA   PARTIE                          "); // SI LE JOUEUR 1 A GAGNE LA PARTIE
 		if (gagnant == 2)
-			Terminal.ecrireStringln("                           LE   JOUEUR 2   A   GAGNÃ‰  LA   PARTIE                          "); // SI LE JOUEUR 2 A GAGNÃ‰ LA PARTIE
+			Terminal.ecrireStringln("                           LE   JOUEUR 2   A   GAGNE  LA   PARTIE                          "); // SI LE JOUEUR 2 A GAGNE LA PARTIE
 
 		Terminal.sautDeLigne();
 
